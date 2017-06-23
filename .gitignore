@@ -1,0 +1,7 @@
+# operating system
+.DS_Store
+.thumbs.db
+
+# node
+node_modules
+*.log

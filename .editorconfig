@@ -1,0 +1,25 @@
+# Rayraegah's standard editorconfig
+# Last updated: Fri 16 Jun 2017, 11:00am
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Language: python, javascript, css, html
+[*.{vue,tag,html,css,js,py}]
+indent_style = tab
+# 1 tab == 1 indent level, the indent size reset to editor default.
+indent_size = unset
+
+# Meta files
+[*.{json,yml}]
+indent_style = space
+indent_size = 4
+
+# Language: markdown
+[*.md]
+# Preserve trailing whitespaces
+trim_trailing_whitespace = false

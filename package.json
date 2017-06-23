@@ -1,0 +1,42 @@
+{
+    "name": "line-reader",
+    "version": "1.0.0",
+    "description": "A tiny nodejs module to read data by lines in .txt files",
+    "main": "index.js",
+    "scripts": {
+        "test": "babel-node src/__test__/test.js",
+        "prebuild": "npm run test",
+        "build": "babel src --out-file index.js --ignore test.js,test.txt",
+        "prepublishOnly": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rayraegah/raw-reader.git"
+    },
+    "keywords": [
+        "file-loader",
+        "jsmodule",
+        "data-reader"
+    ],
+    "author": "Rayraegah",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/rayraegah/raw-reader/issues"
+    },
+    "homepage": "https://github.com/rayraegah/raw-reader#readme",
+    "devDependencies": {
+        "babel-preset-babili": "^0.1.4",
+        "babel-preset-env": "^1.5.2",
+        "babili": "^0.1.4"
+    },
+    "babel": {
+        "presets": [
+            ["env", {
+                "targets": {
+                    "node": 5
+                }
+            }],
+            "babili"
+        ]
+    }
+}
